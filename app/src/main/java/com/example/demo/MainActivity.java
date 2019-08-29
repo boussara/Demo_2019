@@ -28,28 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.exmple_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.item1:
-                Toast.makeText(MainActivity.this,"item1",Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.item2:
-                Toast.makeText(MainActivity.this,"item2",Toast.LENGTH_LONG).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
 @Override
 
     public void onClick(View view) {
